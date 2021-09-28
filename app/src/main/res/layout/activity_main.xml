@@ -13,6 +13,7 @@
 
 
     <Button
+        android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="REGISTRAR CONTACTO"
@@ -24,6 +25,7 @@
         android:layout_height="10dp"/>
 
     <Button
+        android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LISTA DE CONTACTOS"
