@@ -8,7 +8,6 @@ import androidx.annotation.Nullable;
 
 public class ConexionSqLite extends SQLiteOpenHelper {
 
-    private final String crear_tabla="CREATE TABLE sqlite (id SERIAL PRIMARY KEY NOT NULL,imageurl VARCHAR(100),nombre VARCHAR(10), apellido VARCHAR(10),  telefono1 INTEGER,  telefono2 INTEGER, direccion1 VARCHAR(10), direccion2 VARCHAR(10),empresa VARCHAR(10),nickname VARCHAR(10));";
 
     public ConexionSqLite(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -16,7 +15,7 @@ public class ConexionSqLite extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(crear_tabla);
+        db.execSQL(Utilidades.crear_tabla);
     }
 
     @Override
