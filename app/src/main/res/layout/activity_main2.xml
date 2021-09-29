@@ -12,74 +12,92 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="REGISTRAR CONTACTO"
-        android:textSize="30sp"/>
+        android:textSize="10sp"/>
 
     <ImageView
-        android:layout_width="220dp"
-        android:layout_height="220dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/user"
         android:layout_gravity="center"
         />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="INSERTAR IMAGEN"
         android:layout_gravity="center"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
 
-    <EditText
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nombre"
-        android:inputType="text" />
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Apellido"
-        android:inputType="text" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Telefono"
-        android:inputType="number" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Telefono"
-        android:inputType="number" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Direccion 1"
-        android:inputType="text" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:inputType="text" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Direccion 2"
-        android:inputType="text" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido"
+                android:inputType="text" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Empresa"
-        android:inputType="text" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:inputType="number" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Alias"
-        android:inputType="text" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:inputType="number" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GUARDAR"
-        android:layout_gravity="center"
-        android:textSize="25sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Direccion 1"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Direccion 2"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Empresa"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alias"
+                android:inputType="text" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GUARDAR"
+                android:layout_gravity="center"
+                android:textSize="25sp"/>
+
+
+        </LinearLayout>
+
+   </ScrollView>
 
 </LinearLayout>

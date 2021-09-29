@@ -2,12 +2,7 @@ package com.example.marketteam;
 
 public class Usuario {
 
-    public  Usuario (String nombre_,String apellido_,int telefono_){
-        this.nombre= nombre_;
-        this.apellido= apellido_;
-        this.telefono1 = telefono_;
-    }
-
+    private int id;
     private  String imageUrl;
     private String nombre;
     private String apellido;
@@ -17,6 +12,8 @@ public class Usuario {
     private String direccion2;
     private  String empresa;
     private String alias;
+
+
 
 
     public String getImageUrl() {
@@ -89,5 +86,9 @@ public class Usuario {
 
     public void setAlias(String alias) {
         this.alias = alias;
+    }
+
+    public int getId() {
+        return id;
     }
 }

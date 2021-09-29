@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         btn_registro= (Button) findViewById(R.id.btn1);
         btn_lista = (Button) findViewById(R.id.btn2);
 
+        ConexionSqLite con =new ConexionSqLite(this,"sqlite",null,1);
+
+
         btn_registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
